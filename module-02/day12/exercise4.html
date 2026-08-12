@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 4 - Accessibility Fixes</title>
+</head>
+<body>
+
+    <h1>Accessibility Fixes</h1>
+
+    <!--
+        Original problem:
+        <div>Click Me</div>
+
+        Fix:
+        Use a real button element.
+        A screen reader can identify this as a button,
+        and keyboard users can focus and activate it.
+    -->
+    <h2>1. Accessible Button</h2>
+    <button type="button">Click Me</button>
+
+    <!--
+        Original problem:
+        <input type="text">
+
+        Fix:
+        Add a label connected to the input using for and id.
+        Screen-reader users can understand what information
+        should be entered in the field.
+    -->
+    <h2>2. Accessible Input</h2>
+    <label for="full-name">Full Name:</label>
+    <input type="text" id="full-name" name="full-name">
+
+    <!--
+        Original problem:
+        <img src="image.jpg">
+
+        Fix:
+        Add meaningful alt text.
+        Screen-reader users can understand what the image
+        represents.
+    -->
+    <h2>3. Accessible Image</h2>
+    <img
+        src="https://media.tacdn.com/media/attractions-splice-spp-674x446/07/b0/60/cf.jpg"
+        alt="Rock-hewn church of Bete Giyorgis in Lalibela, Ethiopia"
+        width="640"
+        height="420"
+        loading="lazy"
+    >
+
+</body>
+</html>
