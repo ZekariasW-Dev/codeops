@@ -1,0 +1,129 @@
+/* ===== CSS Variables ===== */
+:root {
+    --brand: hsl(212, 68%, 33%);
+    --brand-hover: hsl(212, 68%, 45%);
+    --gold: hsl(43, 69%, 49%);
+    --space: 16px;
+    --radius: 12px;
+    --font-stack: "Inter", Arial, Helvetica, sans-serif;
+    --text-color: #2d3748;
+    --light-bg: #f7fafc;
+    --border-color: #e2e8f0;
+}
+
+/* ===== Global Reset ===== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ===== Body ===== */
+body {
+    font-family: var(--font-stack);
+    line-height: 1.6;
+    background: var(--light-bg);
+    color: var(--text-color);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* ===== Card ===== */
+.card {
+    max-width: 380px;
+    width: 100%;
+    margin: 20px auto;
+    padding: var(--space);
+    background: white;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* ===== Card Header with ::before Pseudo-element ===== */
+.card-header {
+    position: relative;
+    padding-bottom: var(--space);
+    margin-bottom: var(--space);
+    border-bottom: 2px solid var(--border-color);
+}
+
+/* Decorative accent line using ::before */
+.card-header::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: var(--brand);
+    border-radius: 2px;
+}
+
+/* ===== Typography ===== */
+h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--brand);
+    margin-bottom: 4px;
+}
+
+.tagline {
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: #718096;
+    margin: 0;
+}
+
+.card-body p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: var(--space);
+}
+
+/* ===== Info Section ===== */
+.info {
+    background: var(--light-bg);
+    padding: var(--space);
+    border-radius: 8px;
+    margin: var(--space) 0;
+}
+
+.info p {
+    margin: 4px 0;
+    font-size: 0.9rem;
+}
+
+/* ===== Button ===== */
+.btn {
+    display: inline-block;
+    background: var(--brand);
+    color: white;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 8px;
+    font-family: var(--font-stack);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.1s;
+    width: 100%;
+}
+
+/* Hover state - changes only lightness (hsl) */
+.btn:hover {
+    background: var(--brand-hover);
+}
+
+/* Focus state - visible outline */
+.btn:focus {
+    outline: 3px solid var(--brand);
+    outline-offset: 2px;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}

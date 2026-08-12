@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 1 - CSS Variables</title>
+    <style>
+        /* Define variables on :root */
+        :root {
+            --brand-color: #1B4D8E;
+            --brand-hover: #163e73;
+            --spacing: 16px;
+            --font-stack: "Inter", Arial, Helvetica, sans-serif;
+            --text-color: #333333;
+            --border-radius: 8px;
+        }
+
+        /* Apply box-sizing globally */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-stack);
+            padding: 40px;
+            color: var(--text-color);
+        }
+
+        /* Button using all variables */
+        .btn {
+            background: var(--brand-color);
+            color: white;
+            padding: var(--spacing) calc(var(--spacing) * 2);
+            border: none;
+            border-radius: var(--border-radius);
+            font-family: var(--font-stack);
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: var(--brand-hover);
+        }
+
+        .btn:focus {
+            outline: 2px solid var(--brand-color);
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Variables Demo</h1>
+    <p>This button uses all four custom properties defined in :root</p>
+    <button class="btn">Contact Us</button>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 5 - Color Conversion</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            padding: 40px;
+        }
+
+        .color-box {
+            display: inline-block;
+            width: 150px;
+            height: 100px;
+            margin: 10px;
+            border-radius: 8px;
+            text-align: center;
+            line-height: 100px;
+            color: white;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .hex { background: #1B4D8E; }
+        .rgb { background: rgb(27, 77, 142); }
+        .hsl { background: hsl(212, 68%, 33%); }
+        .hsl-hover { background: hsl(212, 68%, 45%); }
+
+        .light-text { color: #333; }
+    </style>
+</head>
+<body>
+    <h1>Color Conversion: Hex → rgb() → hsl()</h1>
+
+    <h2>Original Hex Palette</h2>
+    <div class="color-box hex">#1B4D8E</div>
+    <div class="color-box" style="background:#D4A027;">#D4A027</div>
+    <div class="color-box" style="background:#2E7D32;">#2E7D32</div>
+
+    <h2>Converted to rgb()</h2>
+    <div class="color-box rgb">rgb(27,77,142)</div>
+    <div class="color-box" style="background:rgb(212,160,39);">rgb(212,160,39)</div>
+    <div class="color-box" style="background:rgb(46,125,50);">rgb(46,125,50)</div>
+
+    <h2>Converted to hsl()</h2>
+    <div class="color-box hsl">hsl(212,68%,33%)</div>
+    <div class="color-box" style="background:hsl(43,69%,49%);">hsl(43,69%,49%)</div>
+    <div class="color-box" style="background:hsl(120,46%,34%);">hsl(120,46%,34%)</div>
+
+    <h2>Lighter hover shade (increased lightness only)</h2>
+    <div class="color-box hsl-hover">hsl(212,68%,45%)</div>
+    <div class="color-box" style="background:hsl(43,69%,60%);">hsl(43,69%,60%)</div>
+    <div class="color-box" style="background:hsl(120,46%,50%);">hsl(120,46%,50%)</div>
+
+    <h3>Conversion Notes:</h3>
+    <ul>
+        <li><strong>#1B4D8E</strong> → rgb(27, 77, 142) → hsl(212, 68%, 33%)</li>
+        <li><strong>#D4A027</strong> → rgb(212, 160, 39) → hsl(43, 69%, 49%)</li>
+        <li><strong>#2E7D32</strong> → rgb(46, 125, 50) → hsl(120, 46%, 34%)</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 2 - Box Model</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 40px;
+        }
+
+        .demo {
+            width: 300px;
+            padding: 24px;
+            border: 2px solid #1B4D8E;
+            background: #f0f4fa;
+            margin-bottom: 20px;
+        }
+
+        /* content-box (default) - width = 300 + 48 + 4 = 352px */
+        .content-box {
+            box-sizing: content-box;
+        }
+
+        /* border-box - width = exactly 300px */
+        .border-box {
+            box-sizing: border-box;
+        }
+
+        .note {
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>Box Model Comparison</h1>
+    
+    <div class="demo content-box">
+        <strong>content-box (default)</strong>
+        <p>Width: 300px + 48px padding + 4px border = <strong>352px</strong></p>
+        <p class="note">Box overflows its container!</p>
+    </div>
+
+    <div class="demo border-box">
+        <strong>border-box (fixed)</strong>
+        <p>Width: exactly <strong>300px</strong></p>
+        <p class="note">Padding and border are folded inward ✅</p>
+    </div>
+</body>
+</html>

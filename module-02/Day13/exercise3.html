@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 3 - Specificity</title>
+    <style>
+        /* Element selector - Score: 0,0,0,1 */
+        p {
+            color: black;
+        }
+
+        /* Class selector - Score: 0,0,1,0 */
+        .note {
+            color: blue;
+        }
+
+        /* ID selector - Score: 0,1,0,0 ← WINS! */
+        #lead {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Specificity Prediction</h1>
+    
+    <!-- This paragraph is targeted by all three rules -->
+    <p id="lead" class="note">This text will be GREEN because ID has highest specificity.</p>
+
+    <h2>Specificity Scores:</h2>
+    <ul>
+        <li><strong>p</strong> (element) → 0,0,0,1</li>
+        <li><strong>.note</strong> (class) → 0,0,1,0</li>
+        <li><strong>#lead</strong> (ID) → 0,1,0,0 ← <strong>WINNER!</strong></li>
+    </ul>
+    <p>ID selector wins because it has the highest score in the ID column.</p>
+</body>
+</html>
