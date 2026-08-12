@@ -1,0 +1,43 @@
+EXERCISE 5: Website Inspection Notes
+=====================================
+
+Website: ethio telecom
+URL: https://www.ethiotelecom.et
+Date: August 4, 2026
+
+
+<header> ELEMENT:
+- Located at the top of the page
+- Contains ethio telecom logo
+- Has search bar
+- Has language selector (Amharic/English)
+- White background
+
+
+<nav> ELEMENT:
+- Located inside the header
+- Links: Home, About Us, Services, Mobile, Internet, TV, Business, Support, Contact
+- Horizontal layout
+- Some items have dropdown menus
+- Links change color on hover
+
+
+<footer> ELEMENT:
+- Located at the bottom of the page
+- Dark blue background with white text
+- Contains:
+  - Quick links (About, Careers, News)
+  - Contact: Phone 994, Email
+  - Social media links
+  - Copyright: "© 2026 ethio telecom"
+
+
+WHAT I LEARNED:
+- Real Ethiopian websites use semantic HTML
+- <nav> is inside <header>
+- Navigation uses <ul> and <li>
+- Footer has contact info and copyright
+- My Habesha Market follows the same structure
+
+
+Exercise completed: August 4, 2026
