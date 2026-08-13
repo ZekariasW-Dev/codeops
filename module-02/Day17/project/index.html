@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loyalty Points - TeleBirr Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🏪 TeleBirr Shop</h1>
+        <p class="subtitle">Loyalty Points Module — Private State with Closures</p>
+        <hr>
+
+        <div class="card info">
+            <span class="badge blue">Closure</span>
+            <span class="badge green">Private State</span>
+            <p>The points balance is <strong>truly private</strong> — cannot be accessed from outside.</p>
+        </div>
+
+        <!-- Standard Card -->
+        <h2>🆕 Standard Card</h2>
+        <div class="card">
+            <strong>Initial Balance:</strong> <span id="standard-initial">0</span> points
+        </div>
+        <div class="card green" id="standard-earned">
+            <strong>After earning:</strong> <span id="standard-after-earn">0</span> points
+        </div>
+        <div class="card gold" id="standard-redeem">
+            <strong>After redeeming 30:</strong> <span id="standard-after-redeem">0</span> points
+        </div>
+        <div class="card red" id="standard-final">
+            <strong>After trying to redeem 100:</strong> <span id="standard-final-balance">0</span> points
+            <br><small>✅ Does not go below zero!</small>
+        </div>
+
+        <!-- Holiday Card -->
+        <h2>🎉 Holiday Card — Double Points</h2>
+        <div class="card">
+            <strong>Initial Balance:</strong> <span id="holiday-initial">0</span> points
+        </div>
+        <div class="card green">
+            <strong>After earning (double points):</strong> <span id="holiday-after-earn">0</span> points
+        </div>
+
+        <!-- VIP Card -->
+        <h2>⭐ VIP Card — Triple Points</h2>
+        <div class="card">
+            <strong>Initial Balance:</strong> <span id="vip-initial">0</span> points
+        </div>
+        <div class="card green">
+            <strong>After earning (triple points):</strong> <span id="vip-after-earn">0</span> points
+        </div>
+
+        <hr>
+
+        <!-- Proof of Privacy -->
+        <h2>🔒 Proof: Points are PRIVATE</h2>
+        <div class="card red">
+            <strong>standardCard.points:</strong> <span id="private-proof">undefined</span>
+            <br><small>❌ Cannot access points directly — only through methods!</small>
+        </div>
+
+        <!-- Final Balances -->
+        <div class="card">
+            <strong>Each card has its own independent balance:</strong><br>
+            Standard: <span id="final-standard">0</span> points<br>
+            Holiday: <span id="final-holiday">0</span> points<br>
+            VIP: <span id="final-vip">0</span> points
+        </div>
+
+        <hr>
+
+        <div class="card summary">
+            <h3>✅ Summary</h3>
+            <ul>
+                <li>✅ Points balance is <strong>truly private</strong> (closure)</li>
+                <li>✅ <code>redeem()</code> never goes below zero</li>
+                <li>✅ Earn rules can be swapped in (<strong>higher-order function</strong>)</li>
+                <li>✅ Each card has its own <strong>independent</strong> balance</li>
+                <li>✅ Calculation functions are <strong>pure</strong></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
