@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 4 - Page Layout</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .layout {
+            display: grid;
+            grid-template-columns: 250px 1fr;
+            grid-template-areas:
+                "header header"
+                "sidebar main"
+                "footer footer";
+            min-height: 100vh;
+            gap: 4px;
+        }
+
+        .header {
+            grid-area: header;
+            background: #1B4D8E;
+            color: white;
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+            background: #f0f4fa;
+            padding: 20px;
+            border-right: 1px solid #e2e8f0;
+        }
+
+        .sidebar ul {
+            list-style: none;
+        }
+
+        .sidebar li {
+            padding: 10px 0;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .sidebar a {
+            color: #1B4D8E;
+            text-decoration: none;
+        }
+
+        .main {
+            grid-area: main;
+            padding: 20px;
+            background: white;
+        }
+
+        .main h2 {
+            margin-bottom: 16px;
+        }
+
+        .main p {
+            line-height: 1.8;
+            margin-bottom: 12px;
+        }
+
+        .footer {
+            grid-area: footer;
+            background: #2d3748;
+            color: white;
+            padding: 16px 20px;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        /* Mobile: collapse to single column */
+        @media (max-width: 700px) {
+            .layout {
+                grid-template-columns: 1fr;
+                grid-template-areas:
+                    "header"
+                    "sidebar"
+                    "main"
+                    "footer";
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="layout">
+        <header class="header">
+            <h1>Habesha Eatery</h1>
+        </header>
+
+        <nav class="sidebar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Reservations</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <main class="main">
+            <h2>Welcome to Habesha Eatery</h2>
+            <p>Experience authentic Ethiopian cuisine in the heart of Bole, Addis Ababa.</p>
+            <p>Our menu features traditional dishes made with love and the finest ingredients.</p>
+            <p>Resize the window to see the layout collapse to one column on mobile.</p>
+        </main>
+
+        <footer class="footer">
+            &copy; 2026 Habesha Eatery. Bole, Addis Ababa.
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 2 - Card Row</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            padding: 40px;
+            background: #f7fafc;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .card-row {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            flex: 1;
+            min-width: 150px;
+            background: white;
+            padding: 24px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            border: 1px solid #e2e8f0;
+            text-align: center;
+        }
+
+        .card h3 {
+            color: #1B4D8E;
+            margin-bottom: 8px;
+        }
+
+        .card p {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .card .price {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #2E7D32;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Our Menu</h1>
+    
+    <div class="card-row">
+        <div class="card">
+            <h3>Doro Wat</h3>
+            <p>Spicy chicken stew</p>
+            <div class="price">320 ETB</div>
+        </div>
+        <div class="card">
+            <h3>Shiro</h3>
+            <p>Chickpea stew</p>
+            <div class="price">180 ETB</div>
+        </div>
+        <div class="card">
+            <h3>Tibs</h3>
+            <p>Sautéed beef</p>
+            <div class="price">360 ETB</div>
+        </div>
+        <div class="card">
+            <h3>Kitfo</h3>
+            <p>Minced raw beef</p>
+            <div class="price">380 ETB</div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 3 - Photo Gallery</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            padding: 40px;
+            background: #f7fafc;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+        }
+
+        .gallery-item {
+            background: #1B4D8E;
+            color: white;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .gallery-item:nth-child(2) { background: #D4A027; }
+        .gallery-item:nth-child(3) { background: #2E7D32; }
+        .gallery-item:nth-child(4) { background: #8B4513; }
+        .gallery-item:nth-child(5) { background: #6B21A5; }
+        .gallery-item:nth-child(6) { background: #DC2626; }
+    </style>
+</head>
+<body>
+    <h1>Ethiopian Landmarks Gallery</h1>
+    <p>Resize the window to see columns change automatically.</p>
+    <br>
+
+    <div class="gallery">
+        <div class="gallery-item">Lalibela</div>
+        <div class="gallery-item">Axum</div>
+        <div class="gallery-item">Gondar</div>
+        <div class="gallery-item">Harar</div>
+        <div class="gallery-item">Bahir Dar</div>
+        <div class="gallery-item">Addis Ababa</div>
+    </div>
+</body>
+</html>
