@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f4fa;
+    padding: 40px;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+    color: #0055A4;
+    margin-bottom: 4px;
+}
+
+.subtitle {
+    color: #718096;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #2d3748;
+    margin: 24px 0 12px;
+    font-size: 1.2rem;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #e2e8f0;
+    margin: 20px 0;
+}
+
+.card {
+    background: #f7fafc;
+    padding: 16px 20px;
+    border-radius: 8px;
+    margin: 10px 0;
+    border-left: 4px solid #0055A4;
+}
+
+.card.green {
+    border-left-color: #2E7D32;
+}
+
+.card.red {
+    border-left-color: #DC2626;
+}
+
+.card.gold {
+    border-left-color: #D4A027;
+}
+
+.card.purple {
+    border-left-color: #6B21A5;
+}
+
+.card ul {
+    padding-left: 20px;
+    margin-top: 8px;
+}
+
+.card li {
+    margin: 6px 0;
+}
+
+.badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.badge.green {
+    background: #d1fae5;
+    color: #2E7D32;
+}
+
+.badge.red {
+    background: #fee2e2;
+    color: #DC2626;
+}
+
+.badge.blue {
+    background: #dbeafe;
+    color: #0055A4;
+}
+
+code {
+    background: #edf2f7;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+.receipt-item {
+    padding: 6px 0;
+    border-bottom: 1px dashed #e2e8f0;
+}
+
+.receipt-item:last-child {
+    border-bottom: none;
+}
+
+.total {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.total span {
+    color: #0055A4;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+small {
+    color: #718096;
+    font-size: 0.85rem;
+}
+
+.transaction-item {
+    padding: 8px 0;
+    border-bottom: 1px solid #e2e8f0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.transaction-item:last-child {
+    border-bottom: none;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 16px;
+    }
+
+    .container {
+        padding: 16px;
+    }
+
+    .flex {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+    }
+
+    .transaction-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+    }
+}
