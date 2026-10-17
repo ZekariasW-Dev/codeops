@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+</head>
+<body>
+
+    <h1>Currency Converter</h1>
+
+    <!-- Messages like Loading or Error -->
+    <p id="status"></p>
+
+    <!-- Conversion form -->
+    <form id="convert-form">
+        <input
+            id="amount"
+            type="number"
+            placeholder="Enter amount"
+        >
+
+        <select id="currency">
+            <!-- JavaScript will add currencies here -->
+        </select>
+
+        <button type="submit">Convert</button>
+    </form>
+
+    <!-- Conversion result -->
+    <p id="result"></p>
+
+    <h2>Watchlist</h2>
+
+    <button id="add-watch">Add to Watchlist</button>
+
+    <ul id="watchlist">
+        <!-- JavaScript will add currencies here -->
+    </ul>
+
+    <script src="app.js"></script>
+</body>
+</html>
