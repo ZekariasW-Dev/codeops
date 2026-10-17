@@ -1,0 +1,322 @@
+[
+  {
+    "id": 1,
+    "route": "Bole → Piassa",
+    "start": "Bole",
+    "destination": "Piassa",
+    "startLocation": {
+      "lat": 8.9958,
+      "lng": 38.7878
+    },
+    "destinationLocation": {
+      "lat": 9.0348,
+      "lng": 38.7525
+    },
+    "bus": "Anbessa",
+    "fare": 15
+  },
+  {
+    "id": 2,
+    "route": "Merkato → Bole",
+    "start": "Merkato",
+    "destination": "Bole",
+    "startLocation": {
+      "lat": 9.0301,
+      "lng": 38.7407
+    },
+    "destinationLocation": {
+      "lat": 8.9958,
+      "lng": 38.7878
+    },
+    "bus": "Sheger",
+    "fare": 15
+  },
+  {
+    "id": 3,
+    "route": "Piassa → Mexico",
+    "start": "Piassa",
+    "destination": "Mexico",
+    "startLocation": {
+      "lat": 9.0348,
+      "lng": 38.7525
+    },
+    "destinationLocation": {
+      "lat": 9.0112,
+      "lng": 38.7589
+    },
+    "bus": "Anbessa",
+    "fare": 10
+  },
+  {
+    "id": 4,
+    "route": "Mexico → Bole",
+    "start": "Mexico",
+    "destination": "Bole",
+    "startLocation": {
+      "lat": 9.0112,
+      "lng": 38.7589
+    },
+    "destinationLocation": {
+      "lat": 8.9958,
+      "lng": 38.7878
+    },
+    "bus": "Anbessa",
+    "fare": 12
+  },
+  {
+    "id": 5,
+    "route": "Bole → Merkato",
+    "start": "Bole",
+    "destination": "Merkato",
+    "startLocation": {
+      "lat": 8.9958,
+      "lng": 38.7878
+    },
+    "destinationLocation": {
+      "lat": 9.0301,
+      "lng": 38.7407
+    },
+    "bus": "Sheger",
+    "fare": 15
+  },
+  {
+    "id": 6,
+    "route": "Kazanchis → Bole",
+    "start": "Kazanchis",
+    "destination": "Bole",
+    "startLocation": {
+      "lat": 9.0186,
+      "lng": 38.7657
+    },
+    "destinationLocation": {
+      "lat": 8.9958,
+      "lng": 38.7878
+    },
+    "bus": "Anbessa",
+    "fare": 10
+  },
+  {
+    "id": 7,
+    "route": "Bole → Kazanchis",
+    "start": "Bole",
+    "destination": "Kazanchis",
+    "startLocation": {
+      "lat": 8.9958,
+      "lng": 38.7878
+    },
+    "destinationLocation": {
+      "lat": 9.0186,
+      "lng": 38.7657
+    },
+    "bus": "Sheger",
+    "fare": 10
+  },
+  {
+    "id": 8,
+    "route": "Merkato → Piassa",
+    "start": "Merkato",
+    "destination": "Piassa",
+    "startLocation": {
+      "lat": 9.0301,
+      "lng": 38.7407
+    },
+    "destinationLocation": {
+      "lat": 9.0348,
+      "lng": 38.7525
+    },
+    "bus": "Anbessa",
+    "fare": 10
+  },
+  {
+    "id": 9,
+    "route": "Piassa → Merkato",
+    "start": "Piassa",
+    "destination": "Merkato",
+    "startLocation": {
+      "lat": 9.0348,
+      "lng": 38.7525
+    },
+    "destinationLocation": {
+      "lat": 9.0301,
+      "lng": 38.7407
+    },
+    "bus": "Anbessa",
+    "fare": 10
+  },
+  {
+    "id": 10,
+    "route": "Mexico → Piassa",
+    "start": "Mexico",
+    "destination": "Piassa",
+    "startLocation": {
+      "lat": 9.0112,
+      "lng": 38.7589
+    },
+    "destinationLocation": {
+      "lat": 9.0348,
+      "lng": 38.7525
+    },
+    "bus": "Sheger",
+    "fare": 10
+  },
+  {
+    "id": 11,
+    "route": "Piassa → Bole",
+    "start": "Piassa",
+    "destination": "Bole",
+    "startLocation": {
+      "lat": 9.0348,
+      "lng": 38.7525
+    },
+    "destinationLocation": {
+      "lat": 8.9958,
+      "lng": 38.7878
+    },
+    "bus": "Anbessa",
+    "fare": 15
+  },
+  {
+    "id": 12,
+    "route": "Bole → Mexico",
+    "start": "Bole",
+    "destination": "Mexico",
+    "startLocation": {
+      "lat": 8.9958,
+      "lng": 38.7878
+    },
+    "destinationLocation": {
+      "lat": 9.0112,
+      "lng": 38.7589
+    },
+    "bus": "Sheger",
+    "fare": 12
+  },
+  {
+    "id": 13,
+    "route": "Megenagna → Bole",
+    "start": "Megenagna",
+    "destination": "Bole",
+    "startLocation": {
+      "lat": 9.0236,
+      "lng": 38.7982
+    },
+    "destinationLocation": {
+      "lat": 8.9958,
+      "lng": 38.7878
+    },
+    "bus": "Anbessa",
+    "fare": 12
+  },
+  {
+    "id": 14,
+    "route": "Bole → Megenagna",
+    "start": "Bole",
+    "destination": "Megenagna",
+    "startLocation": {
+      "lat": 8.9958,
+      "lng": 38.7878
+    },
+    "destinationLocation": {
+      "lat": 9.0236,
+      "lng": 38.7982
+    },
+    "bus": "Sheger",
+    "fare": 12
+  },
+  {
+    "id": 15,
+    "route": "Merkato → Mexico",
+    "start": "Merkato",
+    "destination": "Mexico",
+    "startLocation": {
+      "lat": 9.0301,
+      "lng": 38.7407
+    },
+    "destinationLocation": {
+      "lat": 9.0112,
+      "lng": 38.7589
+    },
+    "bus": "Anbessa",
+    "fare": 8
+  },
+  {
+    "id": 16,
+    "route": "Mexico → Merkato",
+    "start": "Mexico",
+    "destination": "Merkato",
+    "startLocation": {
+      "lat": 9.0112,
+      "lng": 38.7589
+    },
+    "destinationLocation": {
+      "lat": 9.0301,
+      "lng": 38.7407
+    },
+    "bus": "Sheger",
+    "fare": 8
+  },
+  {
+    "id": 17,
+    "route": "Kazanchis → Piassa",
+    "start": "Kazanchis",
+    "destination": "Piassa",
+    "startLocation": {
+      "lat": 9.0186,
+      "lng": 38.7657
+    },
+    "destinationLocation": {
+      "lat": 9.0348,
+      "lng": 38.7525
+    },
+    "bus": "Anbessa",
+    "fare": 10
+  },
+  {
+    "id": 18,
+    "route": "Piassa → Kazanchis",
+    "start": "Piassa",
+    "destination": "Kazanchis",
+    "startLocation": {
+      "lat": 9.0348,
+      "lng": 38.7525
+    },
+    "destinationLocation": {
+      "lat": 9.0186,
+      "lng": 38.7657
+    },
+    "bus": "Sheger",
+    "fare": 10
+  },
+  {
+    "id": 19,
+    "route": "Megenagna → Piassa",
+    "start": "Megenagna",
+    "destination": "Piassa",
+    "startLocation": {
+      "lat": 9.0236,
+      "lng": 38.7982
+    },
+    "destinationLocation": {
+      "lat": 9.0348,
+      "lng": 38.7525
+    },
+    "bus": "Anbessa",
+    "fare": 15
+  },
+  {
+    "id": 20,
+    "route": "Piassa → Megenagna",
+    "start": "Piassa",
+    "destination": "Megenagna",
+    "startLocation": {
+      "lat": 9.0348,
+      "lng": 38.7525
+    },
+    "destinationLocation": {
+      "lat": 9.0236,
+      "lng": 38.7982
+    },
+    "bus": "Sheger",
+    "fare": 15
+  }
+]
