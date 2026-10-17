@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h1">Exercise</h1>
+    <ol>
+        <li>Select an < h1> and change its text with textContent, then add a CSS class to it with
+classList.toggle.</li>
+        <li>Given an array of three Ethiopian city names, create an <li> for each with createElement and
+append them to a < ul>.</li>
+        <li>Add a click listener to a button that logs event.target, then wrap the button in a div with its own
+listener and observe bubbling.</li>
+        <li>Build a list of items each with a delete button, and remove any item using a single delegated
+listener on the parent.</li>
+        <li>Add a form with one text input; on submit, preventDefault, read input.value, append it to a list,
+and clear the field.</li>
+    </ol>
+
+    <ul id="ul">
+
+    </ul>
+    <div >
+    <button id="button" >button</button>
+    </div>
+    <ul id="item">
+  <li>Apple <button class="delete">Delete</button></li>
+  <li>Banana <button class="delete">Delete</button></li>
+</ul>
+<form>
+  <input id="taskInput" type="text" placeholder="Enter item">
+  <button type="submit">Add</button>
+</form>
+
+<ul id="taskList"></ul>
+    <script src="app.js"></script>
+</body>
+</html>
