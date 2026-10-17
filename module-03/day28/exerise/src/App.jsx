@@ -1,0 +1,26 @@
+
+import './App.css'
+import Header from './assets/Header'
+import Menu from './assets/Menu'
+
+function App() {
+    const dish =[
+      { id: 1, name: "Injera", price: 50, spicy: false, category: "regular" },
+      { id: 2, name: "Doro Wat", price: 80, spicy: true, category: "spicy" },
+      { id: 3, name: "Beso", price: 60, spicy: false, category: "regular" },
+      { id: 4, name: "Kitfo", price: 100, spicy: true, category: "spicy" },
+      { id: 5, name: "Shiro", price: 70, spicy: false, category: "regular" },
+      { id: 6, name: "Tibs", price: 90, spicy: true, category: "spicy" },
+      { id: 7, name: "Gored Gored", price: 110, spicy: true, category: "spicy" },
+      { id: 8, name: "Firfir", price: 75, spicy: false, category: "regular" },
+    ]
+
+  return (
+    <>
+    <Header />
+      <Menu dishes={dish} />
+    </>
+  )
+}
+
+export default App
