@@ -1,6 +1,10 @@
 import { Link, NavLink, Outlet } from 'react-router-dom'
+import { useAuth } from '../auth/useAuth.js'
+import { CartBadge } from '../cart/CartBadge.jsx'
 
 export function Layout() {
+  const { user, signOut } = useAuth()
+
   return (
     <div className="app-shell">
       <a className="skip-link" href="#main-content">Skip to content</a>
@@ -11,8 +15,14 @@ export function Layout() {
         </Link>
         <nav className="main-nav" aria-label="Main navigation">
           <NavLink to="/menu">Menu</NavLink>
-          <NavLink to="/cart">Basket</NavLink>
-          <NavLink className="nav-signin" to="/signin">Sign in</NavLink>
+          <CartBadge />
+          {user ? (
+            <button className="nav-signin" type="button" onClick={signOut}>
+              Sign out
+            </button>
+          ) : (
+            <NavLink className="nav-signin" to="/signin">Sign in</NavLink>
+          )}
         </nav>
       </header>
       <div id="main-content">

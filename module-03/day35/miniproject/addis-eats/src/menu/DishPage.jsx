@@ -1,9 +1,11 @@
 import { Link, useParams } from 'react-router-dom'
+import { useCart } from '../cart/useCart.js'
 import { useDishes } from '../hooks/useDishes.js'
 import { formatBirr } from '../ui/formatBirr.js'
 
 export function DishPage() {
   const { id } = useParams()
+  const { add } = useCart()
   const { dishes, status, error, retry } = useDishes()
   const dish = dishes.find((item) => item.id === id)
 
@@ -37,7 +39,11 @@ export function DishPage() {
           <h1>{dish.name}</h1>
           <p>{dish.description}</p>
           <p className="detail-price">{formatBirr(dish.price)}</p>
-          <Link className="button button-primary" to="/menu">Back to menu</Link>
+          <button
+            className="button button-primary"
+            type="button"
+            onClick={() => add(dish)}
+          >Add to your order <span aria-hidden="true">+</span></button>
         </div>
       </div>
     </main>

@@ -1,7 +1,10 @@
 import { Link } from 'react-router-dom'
+import { useCart } from '../../cart/useCart.js'
 import { formatBirr } from '../../ui/formatBirr.js'
 
 export function DishCard({ dish }) {
+  const { add } = useCart()
+
   return (
     <article className="dish-card">
       <Link className="dish-art" to={`/menu/${dish.id}`} aria-label={`View ${dish.name}`}>
@@ -17,6 +20,14 @@ export function DishCard({ dish }) {
           <strong>{formatBirr(dish.price)}</strong>
         </div>
         <p className="dish-description">{dish.description}</p>
+        <button
+          className="add-button"
+          type="button"
+          onClick={() => add(dish)}
+          aria-label={`Add ${dish.name} to basket`}
+        >
+          <span aria-hidden="true">+</span> Add to basket
+        </button>
       </div>
     </article>
   )
