@@ -1,0 +1,74 @@
+[
+  {
+    "id": "doro-wot",
+    "name": "Doro wot",
+    "category": "Lunch",
+    "price": 420,
+    "description": "Slow-simmered chicken, berbere, and a boiled egg, served with fresh injera.",
+    "emoji": "🍗",
+    "tag": "House favorite"
+  },
+  {
+    "id": "shiro",
+    "name": "Shiro tegamino",
+    "category": "Lunch",
+    "price": 230,
+    "description": "Silky chickpea stew with garlic and warming spices, served with injera.",
+    "emoji": "🥘",
+    "tag": "Plant based"
+  },
+  {
+    "id": "kitfo",
+    "name": "Kitfo",
+    "category": "Dinner",
+    "price": 480,
+    "description": "Seasoned beef with mitmita and niter kibbeh, with ayib on the side.",
+    "emoji": "🥩",
+    "tag": "Local classic"
+  },
+  {
+    "id": "tibs",
+    "name": "Siga tibs",
+    "category": "Dinner",
+    "price": 390,
+    "description": "Pan-seared beef with rosemary, onions, and peppers.",
+    "emoji": "🍲",
+    "tag": "Made to order"
+  },
+  {
+    "id": "chechebsa",
+    "name": "Chechebsa",
+    "category": "Breakfast",
+    "price": 180,
+    "description": "Torn flatbread tossed with spiced butter and berbere.",
+    "emoji": "🥞",
+    "tag": "Morning pick"
+  },
+  {
+    "id": "ful",
+    "name": "Ful medames",
+    "category": "Breakfast",
+    "price": 160,
+    "description": "Warm fava beans with tomato, onion, and a little fresh lemon.",
+    "emoji": "🫘",
+    "tag": "Comfort food"
+  },
+  {
+    "id": "buna",
+    "name": "Buna",
+    "category": "Drinks",
+    "price": 65,
+    "description": "A freshly brewed cup from an Ethiopian coffee ceremony.",
+    "emoji": "☕",
+    "tag": "Freshly brewed"
+  },
+  {
+    "id": "spris",
+    "name": "Spris",
+    "category": "Drinks",
+    "price": 120,
+    "description": "A bright blend of avocado, mango, and papaya.",
+    "emoji": "🥭",
+    "tag": "Fresh fruit"
+  }
+]
