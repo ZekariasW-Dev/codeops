@@ -1,0 +1,1 @@
+export default function DashboardLoading(){return <main className="dashboard"><div className="state-panel" role="status"><span className="loading-mark" aria-hidden="true"/><h1>Loading revenue dashboard</h1><p>Preparing the latest order summaries…</p></div></main>}

@@ -1,0 +1,7 @@
+*** Begin Patch 
+*** Add File: app/lib/format.js 
++const currency = new Intl.NumberFormat('en-ET', { style: 'currency', currency: 'ETB' }); 
++export const etb = (value) => currency.format(Number(value) || 0); 
++export const when = (value) => new Date(value).toLocaleString('en-ET'); 
++export const relative = (value) => new Intl.RelativeTimeFormat('en', { numeric: 'auto' }).format(Math.round((new Date(value).getTime() - Date.now()) / 60000), 'minute'); 
+*** End Patch 
